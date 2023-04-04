@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    line-height: 1.25em;
+}
+div {
+    display: block;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Montserrat",sans-serif;
+    background-color: #e0e0e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#root{
+padding: 0px;
+min-width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#place_search{
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px solid black ;
+    max-width: 70%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#place_search #search_form label{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#place_search #search_form .search_input{
+    margin-top: 1rem;
+    min-width: 50%;
+    max-width: 70%;
+    padding: 6px;
+    border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+#container{
+    max-width: 80%;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #37a19a;
+    border-radius: 5px;
+    min-height: 349.2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.displayinfo{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#container .weather_gradient {
+    text-align: center;
+}
+#container .weather_gradient .date_container .date_time{
+    display: block;
 }
